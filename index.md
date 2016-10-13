@@ -23,3 +23,7 @@ Se utilizará [Django](https://www.djangoproject.com/) como framework para desar
 ### Front-end
 
 En el front-end se usara HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
+
+## Licencia
+
+El software está sujeto a la licencia [GNU GPL v3](https://github.com/fblupi/master_informatica-CC/blob/master/LICENSE).
