@@ -13,3 +13,13 @@ Gestionar un evento no es una tarea fácil, se mueve una gran cantidad de dinero
 ### Solución propuesta
 
 La idea es desarrollar un software para facilitar toda esta gestión y que sea accesible en todo momento para cualquier organizador. La funcionalidad principal de éste es poder llevar a cabo la gestión económica de un evento (compras, ventas, inversiones, donaciones, patrocinios...). Por otra parte también se podrá gestionar la tabla de actividades que se realizarán durante el evento.
+
+## Tecnología utilizada
+
+### Back-end
+
+Se utilizará [Django](https://www.djangoproject.com/) como framework para desarrollar el back-end junto con una base de datos.
+
+### Front-end
+
+En el front-end se usara HTML, CSS y JavaScript usando [Materialize](http://materializecss.com/) como framework.
