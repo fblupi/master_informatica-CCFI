@@ -1,6 +1,6 @@
 {
-  "name": "GEvents",
+  "name": "GEventator",
   "tagline": "Proyecto de la asignatura Cloud Computing del Máster de Ingeniería Informática de la UGR",
-  "body": "# GEvents\r\nProyecto de la asignatura Cloud Computing del Máster de Ingeniería Informática de la UGR.\r\nEste proyecto consistirá en una aplicación web para la gestión total de eventos.\r\n",
+  "body": "# GEventator\r\nProyecto de la asignatura Cloud Computing del Máster de Ingeniería Informática de la UGR.\r\nEste proyecto consistirá en una aplicación web para la gestión total de eventos.\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
