@@ -15,9 +15,10 @@ La aplicación [G-Tech](http://www.lourigeek.com/gtech/) realizada por mi y otro
 Esta aplicación usa el patrón Modelo Vista Controlador (MVC). Usando SQL en el modelo; HTML, CSS y JavaScript en la vista y PHP en el controlador.
 
 Para evolucionar a un patrón tipo microservicios debería convertir distintos componentes de la aplicación en microservicios:
-* Uno para la vista
-* Otro por cada uno de los módulos de la aplicación (usuarios, empresas, salas y eventos).
-* Para comunicar estos componentes habría que utilizar una API REST.
+
+- Uno para la vista
+- Otro por cada uno de los módulos de la aplicación (usuarios, empresas, salas y eventos).
+- Para comunicar estos componentes habría que utilizar una API REST.
 
 ### Ejercicio 2
 
