@@ -2,6 +2,10 @@
 layout: index
 ---
 
+# Ejercicios
+
+* [Tema 1: Arquitecturas software para la nube](ejercicios#tema1)
+
 # GEventator
 
 ## Introducción
