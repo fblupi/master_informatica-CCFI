@@ -4,7 +4,7 @@ layout: ejercicios
 
 # Ejercicios
 
-[tema1](## Tema 1: Arquitecturas software para la nube)
+## Tema 1: Arquitecturas software para la nube
 
 ### Ejercicio 1
 
