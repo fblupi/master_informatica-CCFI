@@ -24,7 +24,11 @@ Para evolucionar a un patrón tipo microservicios debería convertir distintos c
 
 **En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?**
 
-Respuesta
+Como he explicado en el ejercicio anterior he utilizado SQL en el modelo; HTML, CSS y JavaScript en la vista y PHP en el controlador. Pero si quisiese utilizar distintos lenguajes en el controlador no podría porque está todo muy acoplado.
+
+En cambio si cambiase a una arquitectura tipo microservicios podría usar distintos lenguajes en cada microservicio.
+
+Sería más conveniente utilizar una base de datos de tipo NO-SQL para la transferencia de datos por medio de la API REST mediante el uso de JSON.
 
 ---
 
