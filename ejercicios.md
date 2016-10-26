@@ -17,3 +17,7 @@ Respuesta
 **En la aplicación que se ha usado como ejemplo en el ejercicio anterior, ¿podría usar diferentes lenguajes? ¿Qué almacenes de datos serían los más convenientes?**
 
 Respuesta
+
+---
+
+Volver a [home](index).
