@@ -67,6 +67,23 @@ sudo chef-solo -c chef/solo.rb
 
 ![Chef Recipe](images/chef-recipe.png "chef-recipe")
 
+### Ejercicio 3
+
+**Escribir en YAML la siguiente estructura de datos en JSON: `{ uno: "dos", tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }`**
+
+```yaml
+---
+uno: "dos"
+tres:
+  - 4
+  - 5
+  - "Seis"
+  - siete: 8
+    nueve:
+      - 10
+      - 11
+```
+
 ---
 
 Volver a [home](index).
