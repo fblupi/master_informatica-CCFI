@@ -9,3 +9,4 @@ Repositorio de la asignatura Cloud Computing del Máster de Ingeniería Informá
 ## Ejercicios
 
 * [Tema 1: Arquitecturas software para la nube](ejercicios#tema-1-arquitecturas-software-para-la-nube)
+* [Tema 2: Gestión de infraestructuras virtuales](ejercicios#tema-2-gestion-de-infraestructuras-virtuales)
