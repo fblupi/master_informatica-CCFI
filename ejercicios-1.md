@@ -32,18 +32,4 @@ Sería más conveniente utilizar una base de datos de tipo NO-SQL para la transf
 
 ---
 
-## Tema 2: Gestión de infraestructuras virtuales
-
-### Ejercicio 1
-
-**Instalar chef en la máquina virtual que vayamos a usar**
-
-```
-curl -L https://www.opscode.com/chef/install.sh | sudo bash
-```
-
-![Chef Installation](images/chef-installation.png "chef-installation")
-
----
-
 Volver a [home](index).
