@@ -84,6 +84,35 @@ tres:
       - 11
 ```
 
+### Ejercicio 7
+
+**Instalar una máquina virtual Debian usando Vagrant y conectar con ella**
+
+```
+vagrant box add debian-jessie https://github.com/holms/vagrant-jessie-box/releases/download/Jessie-v0.1/Debian-jessie-amd64-netboot.box
+```
+
+![Vagrant Add](images/vagrant-add.png "vagrant-add")
+
+```
+vagrant init debian-jessie
+```
+
+![Vagrant Init](images/vagrant-init.png "vagrant-init")
+
+```
+vagrant up
+```
+
+![Vagrant Up](images/vagrant-up.png "vagrant-up")
+
+
+```
+vagrant ssh
+```
+
+![Vagrant SSH](images/vagrant-ssh.png "vagrant-ssh")
+
 ---
 
 Volver a [home](index).
