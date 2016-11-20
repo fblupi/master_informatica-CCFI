@@ -4,7 +4,7 @@ layout: ejercicios
 
 # Ejercicios
 
-## Tema 2: Gestión de infraestructuras virtuales
+## Tema 2: Gestión de configuraciones
 
 ### Ejercicio 1
 
