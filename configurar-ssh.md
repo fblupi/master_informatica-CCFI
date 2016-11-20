@@ -28,6 +28,7 @@ ssh-keygen -t rsa -b 2048 -v
 Copiar el contenido del archivo `.pub` generado en el fichero `~/.ssh/authorized_keys` y copiar el otro en la máquina host desde donde se quiere conectar a la máquina virtual. Copiarlo en el directorio `~/.ssh` y añadirle la extensión `.pem`.
 
 Finalmente, para realizar la conexión:
+
 ```
 ssh -i ~/.ssh/UbuntuVBox.pem -p 2281 ubuntu@127.0.0.1
 ```
