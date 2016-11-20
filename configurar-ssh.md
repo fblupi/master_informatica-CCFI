@@ -10,7 +10,7 @@ En primer lugar crear una máquina virtual Ubuntu 16.04 con Oracle VirtualBox, i
 
 Usar la configuración por defecto que utiliza VirtualBox, que incluye NAT como adaptador de red y en Avanzadas -> Reenvío de puertos, añadir la siguiente regla:
 
-![SSH Port Configuration](images/ssh_port.png)
+![SSH Port Configuration](images/ssh-port.png)
 
 Instalar Ubuntu (como nombre de usuario usar, por ejemplo ubuntu. Será el utilizado posteriormente para conectarse vía ssh) y al iniciar atualizar e instalar ssh:
 

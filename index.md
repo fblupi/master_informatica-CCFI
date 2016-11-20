@@ -14,4 +14,4 @@ Repositorio de la asignatura Cloud Computing del Máster de Ingeniería Informá
 
 ## Anexos
 
-* [Configurar SSH](configurar-ssh.md)
+* [Configurar SSH](configurar-ssh)
