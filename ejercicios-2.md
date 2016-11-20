@@ -141,7 +141,7 @@ Descargar la aplicación:
 ansible ubuntu -m git -a "repo=https://github.com/fblupi/polls-django.git dest=~/polls-django version=HEAD"
 ```
 
-Ejercutarla:
+Ejecutarla:
 
 ```
 ansible ubuntu -m command -a "sudo python polls-django/manage.py runserver" --ask-sudo-pass
