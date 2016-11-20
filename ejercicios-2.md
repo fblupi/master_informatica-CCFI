@@ -147,6 +147,46 @@ Ejecutarla:
 ansible ubuntu -m command -a "sudo python polls-django/manage.py runserver" --ask-sudo-pass
 ```
 
+Realizamos una prueba de que está funcionando:
+
+![Ansible playbook running](images/ansible-playbook-running.png "ansible-playbook-running")
+
+### Ejercicio 6
+
+**Desplegar la aplicación que se haya usado anteriormente con todos los módulos necesarios usando un playbook de Ansible**
+
+El playbook es el siguiente:
+
+```yml
+- hosts: ubuntu
+  become: yes
+  become_user: ubuntu
+  tasks:
+  - name: Instalar paquetes
+    apt: name=git state=present
+    apt: name=build-essential state=present
+    apt: name=python-setuptools state=present
+    apt: name=python-dev state=present
+  - name: Instalar Django
+    pip: name=django
+  - name: Descargar proyecto
+    git: repo=https://github.com/fblupi/polls-django.git dest=~/polls-django clone=yes force=yes
+  - name: Ejecutar
+    command: nohup python ~/polls-django/manage.py runserver
+```
+
+Se ejecuta con:
+
+```
+ansible-playbook -b polls-django.yml --ask-sudo-pass
+```
+
+![Ansible playbook](images/ansible-playbook.png "ansible-playbook")
+
+Realizamos una prueba de que está funcionando:
+
+![Ansible playbook running](images/ansible-playbook-running.png "ansible-playbook-running")
+
 ---
 
 Volver a [home](index).
