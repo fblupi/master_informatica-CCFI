@@ -167,12 +167,13 @@ El playbook es el siguiente:
     apt: name=build-essential state=present
     apt: name=python-setuptools state=present
     apt: name=python-dev state=present
+    apt: name=python-pip state=present
   - name: Instalar Django
     pip: name=django
   - name: Descargar proyecto
     git: repo=https://github.com/fblupi/polls-django.git dest=~/polls-django clone=yes force=yes
   - name: Ejecutar
-    command: nohup python ~/polls-django/manage.py runserver
+    command: python ~/polls-django/manage.py runserver
 ```
 
 Se ejecuta con:
