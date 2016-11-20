@@ -84,6 +84,69 @@ tres:
       - 11
 ```
 
+### Ejercicio 5
+
+**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando Ansible**
+
+Lo primero, instalar Ansible:
+
+```
+sudo pip install paramiko PyYAML jinja2 httplib2 ansible
+```
+
+Añadimos la máquina virtual al archivo de hosts de ansible. Para ello creamos el fichero `~/.ansible_hosts` con el siguiente contenido:
+
+```
+[ubuntu]
+127.0.0.1 ansible_ssh_port=2281 ansible_ssh_user='ubuntu' ansible_ssh_private_key_file=~/.ssh/UbuntuVBox.pem
+```
+
+Indicamos a ansible dónde está este archivo con una variable de entorno:
+
+```
+export ANSIBLE_HOSTS=~/.ansible_hosts
+```
+
+Compruebo la conexión con:
+
+```
+ansible ubuntu -m ping
+```
+
+Si aparece el siguiente error:
+
+![Ansible needs Python](images/ansible-needs-python.png "ansible-needs-python")
+
+Para resolverlo, conectarse vía ssh a la máquina virtual e instalar python:
+
+```
+sudo apt-get install python
+```
+
+Volver a comprobar la conexión y ver que funciona:
+
+![Ansible connection](images/ansible-connection.png "ansible-connection")
+
+Ya conectados a la máquina virtual vamos a empezar a instalar dependencias:
+
+```
+ansible ubuntu -m command -a "sudo apt-get install git build-essential python-setuptools python-dev -y" --ask-sudo-pass
+ansible ubuntu -m command -a "sudo easy_install pip" --ask-sudo-pass
+ansible ubuntu -m command -a "sudo pip install django" --ask-sudo-pass
+```
+
+Descargar la aplicación:
+
+```
+ansible ubuntu -m git -a "repo=https://github.com/fblupi/polls-django.git dest=~/polls-django version=HEAD"
+```
+
+Ejercutarla:
+
+```
+ansible ubuntu -m command -a "sudo python polls-django/manage.py runserver" --ask-sudo-pass
+```
+
 ---
 
 Volver a [home](index).
