@@ -114,6 +114,16 @@ sudo docker pull centos:7
 
 ![Docker CentOS7](images/docker-centos7.png "docker-centos7")
 
+### Ejercicio 5
+
+**Crear a partir del contenedor anterior una imagen persistente con *commit*.**
+
+```
+sudo docker commit dff41bede709 ubuntu-docker-cc
+```
+
+![Docker Commit](images/docker-commit.png "docker-commit")
+
 ---
 
 Volver a [home](index).
