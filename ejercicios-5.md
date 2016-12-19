@@ -13,10 +13,33 @@ layout: ejercicios
 ```
 sudo add-apt-repository ppa:ubuntu-lxc/lxc-lts
 sudo apt-get update
-sudo apt-get install lxc2
+sudo apt-get install lxc
 ```
 
 ![LXC Installation](images/lxc-installation.png "lxc-installation")
+
+### Ejercicio 2
+
+**Instalar una distro tal como Alpine y conectarse a ella usando el nombre de usuario y clave que indicará en su creación.**
+
+Instalar:
+
+```
+sudo lxc-create -t alpine -n alpine-cc
+```
+
+![LXC Create Alpine](images/lxc-create-alpine.png "lxc-create-alpine")
+
+Arrancar y conectarse:
+
+```
+sudo lxc-start -n alpine-cc
+sudo lxc-attach -n alpine-cc
+```
+
+![LXC Running Alpine](images/lxc-running-alpine.png "lxc-running-alpine")
+
+*Los fallos de `__git_ps1` son porque se hereda mi `.bash_profile` y Alpine usa `ash`.*
 
 ---
 
