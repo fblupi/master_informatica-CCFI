@@ -11,6 +11,7 @@ Repositorio de la asignatura Cloud Computing del Máster de Ingeniería Informá
 * [Tema 1: Arquitecturas software para la nube](ejercicios-1)
 * [Tema 2: Gestión de configuraciones](ejercicios-2)
 * [Tema 3: Orquestación de máquinas virtuales](ejercicios-3)
+* [Tema 5: Contenedores](ejercicios-5)
 
 ## Anexos
 
