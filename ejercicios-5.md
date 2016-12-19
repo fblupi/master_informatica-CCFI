@@ -41,6 +41,41 @@ sudo lxc-attach -n alpine-cc
 
 *Los fallos de `__git_ps1` son porque se hereda mi `.bash_profile` y Alpine usa `ash`.*
 
+### Ejercicio 3
+
+**Provisionar un contenedor LXC usando Ansible o alguna otra herramienta de configuración que ya se haya usado.**
+
+Se ha realizado utilizando `Vagrant`. Para ello, primero hay que instalar el *plugin*:
+
+```
+vagrant plugin install vagrant-lxc
+```
+
+Creo una máquina virtual:
+
+```
+vagrant init fgrehm/wheezy64-lxc
+```
+
+Copiar el `playbook.yml`de [aquí](https://github.com/fblupi/GEventator/blob/master/provision/Ansible/playbook.yml) y cambio el `Vagrantfile` para que lo utilice:
+
+```rb
+Vagrant.configure("2") do |config|
+  config.vm.box = "fgrehm/wheezy64-lxc"
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
+end
+```
+
+Inicio:
+
+```
+vagrant up --provider=lxc
+```
+
+![LXC Ansible](images/lxc-ansible.png "lxc-ansible")
+
 ---
 
 Volver a [home](index).
