@@ -1,4 +1,4 @@
-# master_informatica-CC
+# CC (Cloud Computing)
 
 Repositorio de la asignatura Cloud Computing del Máster de Ingeniería Informática de la UGR.
 
